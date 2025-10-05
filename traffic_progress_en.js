@@ -186,7 +186,7 @@ const trafficRenderer = (() => {
       const percentage = utils.calculatePercentage(serverData.transfer, serverData.max);
       const fromFormatted = utils.formatDate(serverData.from);
       const toFormatted = utils.formatDate(serverData.to);
-      const nextUpdateFormatted = new Date(serverData.next_update).toLocaleString("en-US", { timeZone: "Asia/Hanoi" });
+      const nextUpdateFormatted = new Date(serverData.next_update).toLocaleString("zh-CN", { timeZone: "Asia/Shanghai" });
       const uniqueClassName = 'traffic-stats-for-server-' + serverData.id;
       const progressColor = utils.getHslGradientColor(percentage);
       const containerDiv = targetElement.closest('div');
