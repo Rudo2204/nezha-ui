@@ -258,7 +258,9 @@ const trafficRenderer = (() => {
               <span class="text-[10px] text-neutral-500 dark:text-neutral-400">/ </span>
               <span class="text-[10px] text-neutral-500 dark:text-neutral-400 total-traffic">${totalFormatted.value}</span>
               <span class="text-[10px] text-neutral-500 dark:text-neutral-400 total-unit">${totalFormatted.unit}</span>
-              <span class="text-[10px] font-medium text-neutral-800 dark:text-neutral-200 percentage-value"> (${percentage}%)</span>
+              <span class="text-[10px] font-medium text-neutral-800 dark:text-neutral-200 percentage-value"> (</span>
+              <span class="text-[10px] font-medium text-neutral-800 dark:text-neutral-200 percentage-value"> ${percentage}%</span>
+              <span class="text-[10px] font-medium text-neutral-800 dark:text-neutral-200 percentage-value">)</span>
             </div>
             <div class="text-[10px] font-medium text-neutral-600 dark:text-neutral-300 time-info" style="opacity:1; transition: opacity 0.3s;">
               ${defaultTimeInfoHTML}
